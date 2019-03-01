@@ -1,0 +1,22 @@
+{
+  "name": "currency-code-challenge",
+  "version": "1.0.0",
+  "description": "currency cap api code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/nodemon index.js --exec babel-node --"
+  },
+  "author": "Casper Purtlebaugh",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
