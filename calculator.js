@@ -10,11 +10,8 @@ export async function calculator(startDate, numberOfDays){
         while (numberOfDays >= count) {
             let day = moment(formatStartDate).add(count, 'd').format("ddd-DD").split("-");;
             if(workDays.includes(day[0])){
-                console.log("day: ", day);
                 let price = + await setPrice(day[1]);
-                console.log("Daily Price: ", price);
                 totalCost = (totalCost + price);
-                console.log("New Total Cost: ", totalCost.toFixed(2));
             };
             count++
         }

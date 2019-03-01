@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Setup Route (traditionally this would be in it's own app dir)
 app.get('/api/v1/budget', async (req, res, next) => {
-    const validStartDate = moment(new Date(req.body.startDate));
+    const validStartDate = moment(new Date(req.body.startDate)).isValid();
     const invalidNumber = isNaN(parseInt(req.body.numberOfDays));
 
-    if(!validStartDate.isValid() || invalidNumber){
+    if(!validStartDate || invalidNumber){
       const error = new Error('Invalid input')
       error.httpStatusCode = 400;
       return next(error);
