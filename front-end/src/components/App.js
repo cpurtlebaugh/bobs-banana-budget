@@ -34,7 +34,7 @@ class App extends Component {
                     <p>
                       BOB'S BANANA BUDGET
                     </p>
-                    <iframe src="https://giphy.com/embed/l4pT5SarS5UVMQDzG"  frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/animation-loop-3d-l4pT5SarS5UVMQDzG"></a></p>
+                    <iframe title="sillygiphy" src="https://giphy.com/embed/l4pT5SarS5UVMQDzG"  frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/animation-loop-3d-l4pT5SarS5UVMQDzG"></a></p>
                 </header>
 
                 <Container className="App-container">
