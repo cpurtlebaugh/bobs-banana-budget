@@ -13,11 +13,11 @@ class ResponseView extends Component {
           <Container>
               <Row>
                   {/* # of days */}
-                  <Col xs="5">
+                  <Col xs={5}>
                       <p>Number Of Days: {this.props.numberOfDays}</p>
                   </Col>
 
-                  <Col xs="5">
+                  <Col xs={5}>
                       <p>Total Cost: {this.props.response.totalCost}</p>       
                   </Col>
               </Row>
