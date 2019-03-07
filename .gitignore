@@ -1,6 +1,1 @@
-# package directories
-/node_modules
-
-# files
 .DS_Store
-package-lock.json
