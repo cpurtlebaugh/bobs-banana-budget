@@ -23,9 +23,7 @@ app.post('/api/v1/budget', async (req, res, next) => {
       const invalidNumber = isNaN(parseInt(req.body.numberOfDays));
       
       if(!validStartDate || invalidNumber){
-          const error = new Error('Invalid input')
-          error.httpStatusCode = 400;
-          return next(error);
+          res.status(400).json("Invalid input");
       }
 
       const totalCost = await calculator(req.body.startDate, req.body.numberOfDays);
